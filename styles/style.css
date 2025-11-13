@@ -230,8 +230,7 @@ ol {
   display: flex;
   flex-direction: column;
   height: 298px;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: auto;
   margin-top: 26px;
   gap: 30px;
   position: relative;
@@ -296,7 +295,6 @@ ol {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
-  max-width: 100%;
 }
 
 .content__video-card-description {
@@ -312,6 +310,7 @@ ol {
   height: 103px;
   object-fit: cover;
   object-position: center;
+  flex-shrink: 0;
 }
 
 .more-button {
